@@ -5,6 +5,8 @@ import Link from "next/link";
 import Botao from "@/app/components/Botao/botao";
 import useInactivityRedirect from "@/app/hook/useInactivityRedirect";
 
+import { Suspense } from "react";
+
 type EstacaoRota = string;
 
 // const coresPorLinha: { [key: string]: string } = {
@@ -16,7 +18,7 @@ type EstacaoRota = string;
 //   "Linha 6 - Laranja": "bg-orange-500",
 // };
 
-export default function Rota() {
+const Rota = () => {	
 
   useInactivityRedirect("/", 15000);
   
@@ -73,3 +75,12 @@ export default function Rota() {
     </div>
   );
 }
+
+export default function RotaPage() {
+  return (
+    <Suspense fallback={<div>Carregando rota...</div>}>
+      <Rota />
+    </Suspense>
+  );
+}
+
