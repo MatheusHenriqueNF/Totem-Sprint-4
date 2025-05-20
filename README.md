@@ -49,7 +49,7 @@ git clone https://github.com/MatheusHenriqueNF/Java-Sprint-4
 
 ### 💡 Instalar o plugin do Quarkus no IntelliJ
 
-1. Abra o IntelliJ IDEA
+1. Abra no IntelliJ IDEA a pasta do arquivo da API "projeto-challenge-api"
 2. Vá até `File > Settings > Plugins`
 
  ![image](https://github.com/user-attachments/assets/705c1ef7-0dcf-4afe-8241-1f0292099a5b)
@@ -92,8 +92,8 @@ git clone https://github.com/MatheusHenriqueNF/Java-Sprint-4
 
 5. **Execute a API pelo TERMINAL:**
 
-   * TERMINAL > Digite: cd .\projeto-challenge-api\
-   * Depois digite: mvn quarkus:dev
+   * TERMINAL > Digite:  mvn quarkus:dev
+   * ⚠️ Verifique se está no diretório correto, caso execute o código fora do repositória da API não irá funcionar
 
 6. **A API estará disponível em:**
 
