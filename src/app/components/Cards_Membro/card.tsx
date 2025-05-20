@@ -7,7 +7,6 @@ type CardProps = {
     rm ?: string;
     descricao ?: string;
     imagem ?: string;
-    clicando ?: () => void;
 }
 
 const CardMembro : React.FC<CardProps> = ({
@@ -15,8 +14,7 @@ const CardMembro : React.FC<CardProps> = ({
     turma = "Turma",
     rm = "RM",
     descricao = "Descrição",
-    imagem = "https://www.google.com.br",
-    clicando
+    imagem = "https://www.google.com.br"
 
 }) =>{
 

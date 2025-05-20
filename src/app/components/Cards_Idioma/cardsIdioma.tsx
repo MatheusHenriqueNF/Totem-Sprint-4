@@ -5,14 +5,12 @@ type CardProps = {
   titulo?: string;
   descricao?: string;
   imagem?: string;
-  clicando?: () => void;
 };
 
 const CardIdioma: React.FC<CardProps> = ({
   titulo = "Titulo",
   descricao = "Descrição",
-  imagem = "/image/nome.png",
-  clicando,
+  imagem = "/image/nome.png"
 }) => {
   return (
     <>

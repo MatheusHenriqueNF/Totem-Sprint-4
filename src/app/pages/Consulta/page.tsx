@@ -12,6 +12,10 @@ type EstacaoOption = {
   value: string; // Apenas o nome da estação
 };
 
+type LinhaEstacao = {
+  nomeLinha: string;
+  nomeEstacao: string;
+};
 
 const Consulta = () => {
     useInactivityRedirect("/", 15000);
@@ -26,17 +30,17 @@ const Consulta = () => {
 
   
   useEffect(() => {
-  fetch("http://localhost:8080/estacoes-linhas")
-    .then((res) => res.json())
-    .then((data) => {
-      const listaFormatada = data.map((item: any) => ({
-        label: `${item.nomeLinha} - ${item.nomeEstacao}`,
-        value: item.nomeEstacao
-      }));
-      setOpcoes(listaFormatada);
-    })
-    .catch((err) => console.error("Erro ao buscar estações:", err));
-}, []);
+    fetch("http://localhost:8080/estacoes-linhas")
+      .then((res) => res.json())
+      .then((data: LinhaEstacao[]) => {
+        const listaFormatada = data.map((item) => ({
+          label: `${item.nomeLinha} - ${item.nomeEstacao}`,
+          value: item.nomeEstacao
+        }));
+        setOpcoes(listaFormatada);
+      })
+      .catch((err) => console.error("Erro ao buscar estações:", err));
+  }, []);
 
 
   const handleMostrarRota = () => {

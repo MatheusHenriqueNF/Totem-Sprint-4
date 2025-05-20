@@ -5,14 +5,13 @@ type CardProps = {
     titulo ?: string;
     descricao ?: string;
     imagem ?: string;
-    clicando ?: () => void;
+    
 }
 
 const Card : React.FC<CardProps> = ({
     titulo = "Titulo",
     descricao = "Descrição",
-    imagem = "https://www.google.com.br",
-    clicando
+    imagem = "https://www.google.com.br"
 
 }) =>{
 

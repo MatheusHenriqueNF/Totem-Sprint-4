@@ -7,14 +7,14 @@ import useInactivityRedirect from "@/app/hook/useInactivityRedirect";
 
 type EstacaoRota = string;
 
-const coresPorLinha: { [key: string]: string } = {
-  "Linha 1 - Azul": "bg-blue-500",
-  "Linha 2 - Verde": "bg-green-500",
-  "Linha 3 - Vermelha": "bg-red-500",
-  "Linha 4 - Amarela": "bg-yellow-500",
-  "Linha 5 - Lilás": "bg-purple-500",
-  "Linha 6 - Laranja": "bg-orange-500",
-};
+// const coresPorLinha: { [key: string]: string } = {
+//   "Linha 1 - Azul": "bg-blue-500",
+//   "Linha 2 - Verde": "bg-green-500",
+//   "Linha 3 - Vermelha": "bg-red-500",
+//   "Linha 4 - Amarela": "bg-yellow-500",
+//   "Linha 5 - Lilás": "bg-purple-500",
+//   "Linha 6 - Laranja": "bg-orange-500",
+// };
 
 export default function Rota() {
 
