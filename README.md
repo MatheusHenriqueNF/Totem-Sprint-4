@@ -10,7 +10,7 @@ Este repositório contém o **Totem Web** do projeto **ViaSmart**, desenvolvido 
 - [Node.js](https://nodejs.org/) instalado (versão 18 ou superior)
 - [Yarn](https://yarnpkg.com/) ou [npm](https://www.npmjs.com/)
 
-### 📦 Passos para rodar localmente
+### 📦 Passos para rodar localmente 
 
 ```bash
 # Clone este repositório
